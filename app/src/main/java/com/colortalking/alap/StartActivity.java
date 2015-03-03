@@ -1,20 +1,18 @@
 package com.colortalking.alap;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class ConnectActivity extends ActionBarActivity {
+public class StartActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connect);
+        setContentView(R.layout.activity_start);
 
         ActionBar actionBar= getSupportActionBar();
         actionBar.hide();
@@ -24,7 +22,7 @@ public class ConnectActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_connect, menu);
+        getMenuInflater().inflate(R.menu.menu_start, menu);
         return true;
     }
 
@@ -41,10 +39,5 @@ public class ConnectActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void showStart(View view){
-        Intent intent= new Intent(getApplicationContext(),StartActivity.class);
-        startActivity(intent);
     }
 }

@@ -9,6 +9,9 @@
     <color name="white">#FFFFFF</color>
     <color name="grey">#dedede</color>
     <color name="darkgrey">#989898</color>
+    <color name="alaplight">#e0f9f6</color>
+
     <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
 
 </resources>
